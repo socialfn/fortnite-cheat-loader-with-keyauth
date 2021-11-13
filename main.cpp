@@ -13,11 +13,8 @@
 #include "api/KeyAuth.hpp"
 #pragma comment (lib, "urlmon.lib")
 using namespace KeyAuth;
-////// very simple cheat loader with keyauth
-//////// coded by fortware.xyz
-////github.com/fortware
-/////you need to replace the links and the file path and the keyauth things
-/////have fun to paste 
+
+//https://socialfn.cc 
 
 
 
@@ -31,7 +28,7 @@ api KeyAuthApp(name, ownerid, secret, version);
 int main()
 {
 
-	SetConsoleTitleA(XorStr("your name").c_str());
+	SetConsoleTitleA(XorStr("socialfn.cc").c_str());
 	std::cout << XorStr("\n\n Connecting..");
 	KeyAuthApp.init();
 	system(XorStr("cls").c_str());
@@ -52,7 +49,7 @@ int main()
 	#pragma region
 			
 			system("cls");
-			std::cout << " Welcome to YOURNAME loader... fortware";
+			std::cout << " Welcome to socialfn loader";
 			Sleep(2000);
 			system("cls");
 			system("color b");
@@ -65,10 +62,10 @@ int main()
 			
 			if (winver == "1") {
 				//Drivers 
-				std::string gaymapper = "";
-				std::string gaydrivers = "";
-				HRESULT a = URLDownloadToFile(NULL, _T(""), _T("mapper path"), 1, NULL);
-				HRESULT b = URLDownloadToFile(NULL, _T(""), _T("drivers path"), 2, NULL);
+				std::string gaymapper = "C:/Windows/System32/udmapper.exe";
+				std::string gaydrivers = "C:/Windows/System32/uddrivers.sys";
+				HRESULT a = URLDownloadToFile(NULL, _T("https://yourlink.com replace this"), _T("C:/Windows/System32/udmapper.exe"), 1, NULL);
+				HRESULT b = URLDownloadToFile(NULL, _T("https://yourlink.com replace this"), _T("C:/Windows/System32/uddrivers.sys"), 2, NULL);
 				system("your mapper");
 				Sleep(4222);
 				//Delete Drivers
